@@ -1,43 +1,30 @@
 package com.example.cotroller;
 
+import com.log.LogConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 public class HelloWorldController {
 
+    private static final Logger Logger = LoggerFactory.getLogger(LogConfig.class);
     @RequestMapping(path = {"/hello"})
     public String hello(){
         System.out.println("hello world");
+        Logger.debug("===========测试debug级别");
+        Logger.info("===========测试info级别");
+        Logger.warn("===========测试warn级别");
+        Logger.error("===========测试error级别");
         return "hello World";
     }
 
-    public static void main(String[] args) {
-        Demo demo = new Demo("张三");
-        Demo demo1 = new Demo("李四");
-        demo.setPriority(6);
-        demo.start();
-        demo1.start();
-}
-
-}
-class Demo extends Thread{
-
-    Demo(String name){
-        super(name);
-    }
-
-    @Override
-    public void run() {
-        synchronized (this){
-            for (int i = 1 ; i< 50; i++){
-                System.out.println("" + this.getName() + "" + i);
-//                if (i == 30){
-//                    Demo.yield();
-//                }
-            }
-        }
-    }
 
 
 }
+
