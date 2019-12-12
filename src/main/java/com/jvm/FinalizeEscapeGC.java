@@ -1,4 +1,4 @@
-package com.JVM;
+package com.jvm;
 
 /**
  * 〈一句话功能简述〉<br>

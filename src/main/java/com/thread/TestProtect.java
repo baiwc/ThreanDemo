@@ -1,6 +1,6 @@
 package com.thread;
 
-import com.JVM.TestDefault;
+import com.jvm.TestDefault;
 
 /**
  * 〈一句话功能简述〉<br>
@@ -10,7 +10,7 @@ import com.JVM.TestDefault;
  * @date 2019-11-12 10:27
  * @since 2019.11.12
  */
-public class TestProtect extends TestDefault{
+public class TestProtect extends TestDefault {
 
     public static void main(String[] args) {
         TestDefault testDefault = new TestDefault();

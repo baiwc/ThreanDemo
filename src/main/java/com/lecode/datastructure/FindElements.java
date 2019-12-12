@@ -1,4 +1,4 @@
-package com.lecode;
+package com.lecode.datastructure;
 
 /**
  * 〈一句话功能简述〉<br>

@@ -21,5 +21,5 @@ public class LogConfig {
     @Bean
     public void Test(){
         LOGGER.info("==============日志测试类==========");
-    }
+   }
 }

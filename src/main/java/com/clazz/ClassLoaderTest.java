@@ -1,4 +1,4 @@
-package com.Class;
+package com.clazz;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -34,9 +34,9 @@ public class ClassLoaderTest {
         };
 
         try {
-            Object obj = myLoader.loadClass("com.Class.ClassLoaderTest").newInstance();
+            Object obj = myLoader.loadClass("com.clazz.ClassLoaderTest").newInstance();
             System.out.println(obj.getClass());
-            System.out.println(obj instanceof com.Class.ClassLoaderTest);
+            System.out.println(obj instanceof ClassLoaderTest);
         } catch (Exception e) {
             e.printStackTrace();
         }

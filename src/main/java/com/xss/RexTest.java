@@ -1,4 +1,4 @@
-package com.XSS;
+package com.xss;
 
 import java.util.regex.Pattern;
 

@@ -1,4 +1,4 @@
-package com.Class;
+package com.clazz;
 
 import java.util.ArrayList;
 import java.util.List;
