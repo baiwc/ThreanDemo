@@ -2,6 +2,8 @@ package com.example.service;
 
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -31,21 +33,14 @@ public  class ReplaceStr {
         return list;
     }
 
-    public void actionFormed(final ActionEvent actionEvent){
-
-
-
-    }
-
-    private void startCounting(){
-
-    }
-
-    private void stopCountting(){
-        
-    }
     public static void main(String[] args) {
         System.out.println("size = " + replaceStr().size() + "\n"  + replaceStr());
+        Collections.sort(new ArrayList<>(), new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return 0;
+            }
+        });
     }
 
 }
